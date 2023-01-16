@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace Algorithms.Arrays
+namespace Algorithms.DataStructures.Arrays
 {
     // There's an algorithms tournament taking place in which teams of programmers
     // compete against each other to solve algorithmic problems as fast as possible.

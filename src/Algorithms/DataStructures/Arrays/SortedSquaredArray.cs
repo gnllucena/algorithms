@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace Algorithms.Arrays
+namespace Algorithms.DataStructures.Arrays
 {
     internal class SortedSquaredArray
     {
@@ -27,7 +27,7 @@ namespace Algorithms.Arrays
 
             while (insertIndex > -1)
             {
-                var left = array[firstIndex] * array[firstIndex];   
+                var left = array[firstIndex] * array[firstIndex];
                 var right = array[lastIndex] * array[lastIndex];
 
                 if (left > right)
