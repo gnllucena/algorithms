@@ -54,22 +54,26 @@ namespace Algorithms.DataStructures
             //  /         \
             // 1           14
             // read as = 10, 15, 22, 13, 14, 5, 5, 2, 1
-            var bst = new BST(10);
-            bst = bst.Insert(15);
-            bst = bst.Insert(22);
-            bst = bst.Insert(13);
-            bst = bst.Insert(14);
-            bst = bst.Insert(5);
-            bst = bst.Insert(5);
-            bst = bst.Insert(2);
-            bst = bst.Insert(1);
+            //var bst = new BST(10);
+            //bst = bst.Insert(15);
+            //bst = bst.Insert(22);
+            //bst = bst.Insert(13);
+            //bst = bst.Insert(14);
+            //bst = bst.Insert(5);
+            //bst = bst.Insert(5);
+            //bst = bst.Insert(2);
+            //bst = bst.Insert(1);
 
-            
-            var contains = bst.Contains(2);
+            //var contains = bst.Contains(2);
+
+            //bst = bst.Remove(10);
+
+            var bst = new BST(10);
+            bst = bst.Insert(5);
+            bst = bst.Remove(10);
+            var contains = bst.Contains(15);
 
             var i = 0;
-
-
         }
     }
 }

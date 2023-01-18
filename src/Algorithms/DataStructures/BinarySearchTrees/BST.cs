@@ -28,7 +28,7 @@ namespace Algorithms.DataStructures.BinarySearchTrees
                 }
                 else
                 {
-                    this.right = this.right.Insert(value);
+                    this.right.Insert(value);
                 }
             }
             else if (value < this.value)
@@ -39,7 +39,7 @@ namespace Algorithms.DataStructures.BinarySearchTrees
                 }
                 else
                 {
-                    this.left = this.left.Insert(value);
+                    this.left.Insert(value);
                 }
             }
 
@@ -95,23 +95,28 @@ namespace Algorithms.DataStructures.BinarySearchTrees
                 else if (this.left == null)
                 {
                     this.value = this.right.value;
-                    this.left = this.right.left;
-                    this.right = this.right.right;
+                    this.left = this.right?.left;
+                    this.right = this.right?.right;
                 }
                 else if (this.right == null)
                 {
                     this.value = this.left.value;
-                    this.left = this.left.left;
-                    this.right = this.left.right;
+                    this.left = this.left?.left;
+                    this.right = this.left?.right;
                 }
-                else if (this.left != null & this.right != null)
+                else
                 {
-                    // find smallest from right subtree
-                    var smallest = smallest();
-                    this.value = smallest.value;
-                    this.right.Remove(smallest.value);
-                }
+                    // because is the smallest from the right subtree
+                    BST smallest = this.right;
+                    
+                    while (smallest.left != null)
+                    {
+                        smallest = smallest.left;
+                    }
 
+                    this.value = smallest.value;
+                    this.right = this.right.Remove(smallest.value);
+                }
             }
 
             return this;
