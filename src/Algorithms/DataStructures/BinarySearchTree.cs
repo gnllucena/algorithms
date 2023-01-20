@@ -10,50 +10,65 @@ using Algorithms.DataStructures.BinarySearchTrees;
 
 namespace Algorithms.DataStructures
 {
+
+    // tree =  10
+    //       /    \
+    //      5      15
+    //    /   \   /  \
+    //   2     5 13   22
+    //  /         \
+    // 1           14
+    // read as = 10, 15, 22, 13, 14, 5, 5, 2, 1
     internal class BinarySearchTree
     {
         public static void Green()
         {
             Console.WriteLine("FindClosestValueInBST");
-            // tree =  10
-            //       /    \
-            //      5      15
-            //    /   \   /  \
-            //   2     5 13   22
-            //  /         \
-            // 1           14
-            // read as = 10, 15, 22, 13, 14, 5, 5, 2, 1
-            //var bst = new (int value, int? left, int? right)[]
-            //{
-            //    (10, 5, 15),
-            //    (15, 13, 22),
-            //    (22, null, null),
-            //    (13, null, 14),
-            //    (14, null, null),
-            //    (5, 2, 5),
-            //    (5, null, null),
-            //    (2, 1, null),
-            //    (1, null, null)
-            //};
+            //var bst = new BST(10);
+            //bst = bst.Insert(15);
+            //bst = bst.Insert(22);
+            //bst = bst.Insert(13);
+            //bst = bst.Insert(14);
+            //bst = bst.Insert(5);
+            //bst = bst.Insert(5);
+            //bst = bst.Insert(2);
+            //bst = bst.Insert(1);
 
-            //BST? tree = null;
-            //tree = Fill(bst);
+            var bst = new BST(100);
+            bst = bst.Insert(502);
+            bst = bst.Insert(55000);
+            bst = bst.Insert(1001);
+            bst = bst.Insert(4500);
+            bst = bst.Insert(204);
+            bst = bst.Insert(205);
+            bst = bst.Insert(207);
+            bst = bst.Insert(208);
+            bst = bst.Insert(206);
+            bst = bst.Insert(203);
+            bst = bst.Insert(5);
+            bst = bst.Insert(15);
+            bst = bst.Insert(22);
+            bst = bst.Insert(57);
+            bst = bst.Insert(60);
+            bst = bst.Insert(5);
+            bst = bst.Insert(2);
+            bst = bst.Insert(3);
+            bst = bst.Insert(1);
+            bst = bst.Insert(1);
+            bst = bst.Insert(1);
+            bst = bst.Insert(1);
+            bst = bst.Insert(1);
+            bst = bst.Insert(-51);
+            bst = bst.Insert(-403);
 
-            //var target = 12;
-            //var result = FindClosestValueInBST.Problem(tree, target);
+            var target = -1;
+
+            FindClosestValueInBST.Problem(bst, target);
         }
 
         public static void Blue()
         {
             Console.WriteLine("BSTConstruction");
-            // tree =  10
-            //       /    \
-            //      5      15
-            //    /   \   /  \
-            //   2     5 13   22
-            //  /         \
-            // 1           14
-            // read as = 10, 15, 22, 13, 14, 5, 5, 2, 1
             //var bst = new BST(10);
             //bst = bst.Insert(15);
             //bst = bst.Insert(22);
@@ -67,13 +82,6 @@ namespace Algorithms.DataStructures
             //var contains = bst.Contains(2);
 
             //bst = bst.Remove(10);
-
-            var bst = new BST(10);
-            bst = bst.Insert(5);
-            bst = bst.Remove(10);
-            var contains = bst.Contains(15);
-
-            var i = 0;
         }
     }
 }

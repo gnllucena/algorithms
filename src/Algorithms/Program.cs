@@ -2,5 +2,5 @@
 using Array = Algorithms.DataStructures.Array;
 
 Array.Green();
-// BinarySearchTree.Green();
-BinarySearchTree.Blue();
+BinarySearchTree.Green();
+// BinarySearchTree.Blue();

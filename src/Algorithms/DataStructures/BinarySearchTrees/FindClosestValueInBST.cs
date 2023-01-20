@@ -1,34 +1,72 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Algorithms.DataStructures.BinarySearchTrees
 {
     internal class FindClosestValueInBST
     {
-        
 
-        // Given two non-empty arrays of integers, write a function that determines whether the second array is a
-        // subsequence of the first one.
 
-        // A subsequence of an array is a set of numbers that aren't necessarily adjacent in the array
-        // but that are in the same order as they appear in the array.
-        // For instance, the numbers [1, 3, 4] form a subsequence of the array [1, 2, 3, 4],
-        // and so do the numbers [2, 4].
-        // Note that a single number in an array and the array itself are both valid subsequences of the array.
-
+        // Write a function that takes in a Binary Search Tree(BST)
+        // and a target integer value and returns the closest value to that target value contained in the BST.
+        // You can assume that there will only be one closest value.
+        // Each BST node has an integer value, a left child node, and a right child node.
+        // A node is said to be a valid BST node if and only if it satisfies the BST property:
+        // its value is strictly greater than the values of every node to its left;
+        // its value is less than or equal to the values of every node to its right;
+        // and its children nodes are either valid BST nodes themselves or None / null.
+        //
         // Sample Input
-        // array = [5, 1, 22, 25, 6, -1, 8, 10]
-        // sequence = [1, 6, -1, 10]
-        // Sample Output: true
-        //public static int Problem(BST tree, int target)
-        //{
-        
-        //}
+        // tree =   10
+        //        /     \
+        //       5      15
+        //     /   \   /   \
+        //    2     5 13   22
+        //  /           \
+        // 1            14
+        // target = 12
+        // Sample Output
+        // 13
+        public static int Problem(BST tree, int target)
+        {
+            return Find(tree, target, tree.value);
+        }
 
-        
+        public static int Find(BST tree, int target, int closest)
+        {
+            var differenceCurrent = tree.value - target;
+            var differenceClosest = closest - target;
 
+            if (Math.Abs(differenceCurrent) < Math.Abs(differenceClosest))
+            {
+                closest = tree.value;
+            }
+
+            if (target > tree.value)
+            {
+                if (tree.right != null)
+                {
+                    return Find(tree.right, target, closest);
+                }
+
+                return closest;
+            }
+            else if (target < tree.value)
+            {
+                if (tree.left != null)
+                {
+                    return Find(tree.left, target, closest);
+                }
+
+                return closest;
+            }
+
+            return tree.value;
+        }
     }
 }
