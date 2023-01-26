@@ -3,4 +3,5 @@ using Array = Algorithms.DataStructures.Array;
 
 Array.Green();
 BinarySearchTree.Green();
-// BinarySearchTree.Blue();
+BinarySearchTree.Blue();
+BinaryTree.Green();

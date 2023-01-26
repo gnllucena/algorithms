@@ -24,46 +24,36 @@ namespace Algorithms.DataStructures
         public static void Green()
         {
             Console.WriteLine("FindClosestValueInBST");
-            //var bst = new BST(10);
+            //var bst = new BST(100);
+            //bst = bst.Insert(502);
+            //bst = bst.Insert(55000);
+            //bst = bst.Insert(1001);
+            //bst = bst.Insert(4500);
+            //bst = bst.Insert(204);
+            //bst = bst.Insert(205);
+            //bst = bst.Insert(207);
+            //bst = bst.Insert(208);
+            //bst = bst.Insert(206);
+            //bst = bst.Insert(203);
+            //bst = bst.Insert(5);
             //bst = bst.Insert(15);
             //bst = bst.Insert(22);
-            //bst = bst.Insert(13);
-            //bst = bst.Insert(14);
-            //bst = bst.Insert(5);
+            //bst = bst.Insert(57);
+            //bst = bst.Insert(60);
             //bst = bst.Insert(5);
             //bst = bst.Insert(2);
+            //bst = bst.Insert(3);
             //bst = bst.Insert(1);
+            //bst = bst.Insert(1);
+            //bst = bst.Insert(1);
+            //bst = bst.Insert(1);
+            //bst = bst.Insert(1);
+            //bst = bst.Insert(-51);
+            //bst = bst.Insert(-403);
 
-            var bst = new BST(100);
-            bst = bst.Insert(502);
-            bst = bst.Insert(55000);
-            bst = bst.Insert(1001);
-            bst = bst.Insert(4500);
-            bst = bst.Insert(204);
-            bst = bst.Insert(205);
-            bst = bst.Insert(207);
-            bst = bst.Insert(208);
-            bst = bst.Insert(206);
-            bst = bst.Insert(203);
-            bst = bst.Insert(5);
-            bst = bst.Insert(15);
-            bst = bst.Insert(22);
-            bst = bst.Insert(57);
-            bst = bst.Insert(60);
-            bst = bst.Insert(5);
-            bst = bst.Insert(2);
-            bst = bst.Insert(3);
-            bst = bst.Insert(1);
-            bst = bst.Insert(1);
-            bst = bst.Insert(1);
-            bst = bst.Insert(1);
-            bst = bst.Insert(1);
-            bst = bst.Insert(-51);
-            bst = bst.Insert(-403);
+            //var target = -1;
 
-            var target = -1;
-
-            FindClosestValueInBST.Problem(bst, target);
+            //FindClosestValueInBST.Problem(bst, target);
         }
 
         public static void Blue()
