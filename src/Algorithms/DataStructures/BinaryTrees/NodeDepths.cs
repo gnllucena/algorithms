@@ -10,31 +10,24 @@ namespace Algorithms.DataStructures.BinaryTrees
     {
         public static int Problem(BT root)
         {
-            var items = new List<int>();
-             
-            var result = Find(root, 0, items);
-
-            return result.Sum(x => x);
+            return Find(root, 0, 0);
         }
 
-        public static List<int> Find(BT node, int sum, List<int> items)
+        public static int Find(BT node, int sum, int depth)
         {
+            sum += depth;
+
             if (node.left != null)
             {
-                Find(node.left, sum, items);
+                sum = Find(node.left, sum, depth + 1);
             }
 
             if (node.right != null)
             {
-                Find(node.right, sum, items);
+                sum = Find(node.right, sum, depth + 1);
             }
 
-            if (node.left == null && node.right == null)
-            {
-                items.Add(sum);
-            }
-
-            return items;
+            return sum;
         }
     }
 }

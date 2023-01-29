@@ -32,7 +32,7 @@ namespace Algorithms.DataStructures
             //var result = BranchSums.Problem(binaryTree);
 
             Console.WriteLine("BranchSums");
-            var array = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            var array = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
             var binaryTree = BT.InsertInOrder(array, 0);
 
