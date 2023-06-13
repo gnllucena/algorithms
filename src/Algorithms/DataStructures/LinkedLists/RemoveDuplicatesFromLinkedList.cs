@@ -23,8 +23,21 @@ namespace Algorithms.DataStructures.LinkedLists
 
         public static LinkedList Problem(LinkedList linkedList)
         {
-            // Write your code here.
-            return null;
+            var current = linkedList;
+
+            while (current != null)
+            {
+                if (current.value == current.next?.value)
+                {
+                    current.next = current.next.next;
+                }
+                else
+                {
+                    current = current.next;
+                }
+            }
+
+            return linkedList;
         }
     }
 }

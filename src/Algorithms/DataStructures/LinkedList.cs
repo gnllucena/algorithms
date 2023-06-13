@@ -13,15 +13,17 @@ namespace Algorithms.DataStructures
         {
             Console.WriteLine("RemoveDuplicatesFromLinkedList");
 
-            var lk = new LinkedLists.RemoveDuplicatesFromLinkedList.LinkedList(1);
-            lk.next = new LinkedLists.RemoveDuplicatesFromLinkedList.LinkedList(1);
-            lk.next.next = new LinkedLists.RemoveDuplicatesFromLinkedList.LinkedList(3);
-            lk.next.next.next = new LinkedLists.RemoveDuplicatesFromLinkedList.LinkedList(4);
-            lk.next.next.next.next = new LinkedLists.RemoveDuplicatesFromLinkedList.LinkedList(4);
-            lk.next.next.next.next.next = new LinkedLists.RemoveDuplicatesFromLinkedList.LinkedList(4);
-            lk.next.next.next.next.next.next = new LinkedLists.RemoveDuplicatesFromLinkedList.LinkedList(5);
-            lk.next.next.next.next.next.next.next = new LinkedLists.RemoveDuplicatesFromLinkedList.LinkedList(6);
-            lk.next.next.next.next.next.next.next.next = new LinkedLists.RemoveDuplicatesFromLinkedList.LinkedList(6);
+            var lk = new RemoveDuplicatesFromLinkedList.LinkedList(1);
+            lk.next = new RemoveDuplicatesFromLinkedList.LinkedList(1);
+            lk.next.next = new RemoveDuplicatesFromLinkedList.LinkedList(3);
+            lk.next.next.next = new RemoveDuplicatesFromLinkedList.LinkedList(4);
+            lk.next.next.next.next = new RemoveDuplicatesFromLinkedList.LinkedList(4);
+            lk.next.next.next.next.next = new RemoveDuplicatesFromLinkedList.LinkedList(4);
+            lk.next.next.next.next.next.next = new RemoveDuplicatesFromLinkedList.LinkedList(5);
+            lk.next.next.next.next.next.next.next = new RemoveDuplicatesFromLinkedList.LinkedList(6);
+            lk.next.next.next.next.next.next.next.next = new RemoveDuplicatesFromLinkedList.LinkedList(6);
+
+            RemoveDuplicatesFromLinkedList.Problem(lk);
 
             var i = 0;
         }
