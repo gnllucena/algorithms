@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms.DataStructures.LinkedLists
+namespace Algorithms.DataStructures.Recursion
 {
-    internal class NthFibonacci
+    internal class BinarySearch
     {
 
         public static int Problem(int n)

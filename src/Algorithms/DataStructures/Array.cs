@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms.DataStructures
+namespace Algorithms.DataStructures.Array
 {
-    internal class Array
+    internal class ArrayAlgs
     {
         public static void Green()
         {

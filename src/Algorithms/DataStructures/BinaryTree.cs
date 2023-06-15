@@ -9,7 +9,7 @@ using System.Security.Principal;
 using Algorithms.DataStructures.BinaryTrees;
 using static Algorithms.DataStructures.BinaryTrees.BranchSums;
 
-namespace Algorithms.DataStructures
+namespace Algorithms.DataStructures.BinaryTree
 {
 
     // tree =     1

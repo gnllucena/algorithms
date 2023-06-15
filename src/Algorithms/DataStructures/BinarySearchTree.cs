@@ -8,7 +8,7 @@ using System.Xml.Linq;
 using System.Security.Principal;
 using Algorithms.DataStructures.BinarySearchTrees;
 
-namespace Algorithms.DataStructures
+namespace Algorithms.DataStructures.BinarySearchTree
 {
 
     // tree =  10
