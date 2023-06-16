@@ -15,7 +15,16 @@ namespace Algorithms.DataStructures.Strings
             // var result = PalindromeCheck.Problem("abcdcba");
 
             Console.WriteLine("Ceasar Cipher Encryptor");
-            var result = CeasarCipherEncryptor.Problem("xyz", 2);
+            //var result = CeasarCipherEncryptor.Problem("xyz", 2);
+
+            Console.WriteLine("Run Length Encoding");
+            //var result = RunLenghtEncoding.Problem("AAAAAAAAAAAAABBCCCCDD");
+
+            Console.WriteLine("Common Characters");
+            //var result = CommonCharacters.Problem(new string[] { "abc", "bcd", "cbad" });
+
+            Console.WriteLine("Generate Document");
+            var result = GenerateDocument.Problem("Bste!hetsi ogEAxpelrt x ", "AlgoExpert is the Best!");
         }
     }
 }

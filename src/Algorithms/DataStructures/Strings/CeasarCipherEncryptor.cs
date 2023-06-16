@@ -10,8 +10,6 @@ namespace Algorithms.DataStructures.Strings
     {
         public static string Problem(string str, int key)
         {
-            key = key % 26;
-
             // 26 letters
             string alphabet = "abcdefghijklmnopqrstuvwxyz";
 
@@ -21,16 +19,9 @@ namespace Algorithms.DataStructures.Strings
             {
                 var index = alphabet.IndexOf(character);
 
-                var newLetterIndex = index + key;
+                var newIndex = (index + key) % 26;
 
-                if (newLetterIndex > 25)
-                {
-                    // -1 because the alphabet has 26 letters,
-                    // and the array has 25 positions (it starts with 0)
-                    newLetterIndex = newLetterIndex - 26 + key - 2; 
-                }
-
-                newString += alphabet[newLetterIndex];
+                newString += alphabet[newIndex];
             }
 
             return newString;
