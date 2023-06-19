@@ -24,7 +24,10 @@ namespace Algorithms.DataStructures.Strings
             //var result = CommonCharacters.Problem(new string[] { "abc", "bcd", "cbad" });
 
             Console.WriteLine("Generate Document");
-            var result = GenerateDocument.Problem("Bste!hetsi ogEAxpelrt x ", "AlgoExpert is the Best!");
+            //var result = GenerateDocument.Problem("A", "a");
+
+            Console.WriteLine("First non repeating character");
+            var result = FirstNonRepeatingCharacter.Problem("ababac");
         }
     }
 }
